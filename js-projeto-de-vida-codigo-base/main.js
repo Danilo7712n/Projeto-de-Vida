@@ -1,15 +1,21 @@
-const botoes = document.querySelectorAll(".botao");
-const textos = document.querySelectorAll(".aba-conteudo");
+const botoes = document.querySelectorAll (".botao");
+const textos = document.querySelectorAll (".aba-conteudo");
 
 for (let i = 0; i < botoes.length; i++) {
     botoes[i].onclick = function () {
 
         for (let j = 0; j < botoes.length; j++) {
-            botoes[j].classList.remove("ativo");
-            textos[j].classList.remove("ativo");
+            botoes[j].classList.remove ("ativo");
+            textos[j].classList.remove ("ativo");
         }
 
-        botoes[i].classList.add("ativo");
-        textos[i].classList.add("ativo");
+        botoes[i].classList.add ("ativo");
+        textos[i].classList.add ("ativo");
     }
 }
+
+const contadores = document.querySelectorAll (".contador");
+const TempoObjetivo1 = new Date ("");
+const TempoObjetivo2 = new Date ("");
+const TempoObjetivo3 = new Date ("");
+const TempoObjetivo4 = new Date ("");
